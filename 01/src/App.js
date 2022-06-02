@@ -2,7 +2,7 @@ import React from 'react'
 import './style/style.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
-import ReactDOM from "react-dom/client";
+
 import {
   BrowserRouter,
   Routes,

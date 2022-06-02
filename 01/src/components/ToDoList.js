@@ -1,9 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from "react";
-import { getData, getOne, deleteOne, updateOne } from "../models/ToDoModel";
+import { getData, deleteOne, updateOne } from "../models/ToDoModel";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Card from '@mui/material/Card';
+
 import { Checkbox, IconButton, Paper, Typography } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 

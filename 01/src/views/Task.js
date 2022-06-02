@@ -2,6 +2,7 @@ import { getOne, deleteOne, updateOne } from "../models/ToDoModel";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Card } from "@mui/material";
 const Task = () => {
 
     let params = useParams();
@@ -43,7 +44,7 @@ const Task = () => {
 
 
     return (
-        <div id="Task" data-testid="Task" >
+        <Card id="Task" data-testid="Task" elevation={12}>
             <Link to="/">Retour</Link>
             <div>
                 <h1>{dataTask && dataTask.title}</h1>
@@ -64,7 +65,7 @@ const Task = () => {
                 <button onClick={() => { handleDeleteButton() }}>Delete the task</button>
 
             </div>
-        </div>
+        </Card>
     );
 }
 
