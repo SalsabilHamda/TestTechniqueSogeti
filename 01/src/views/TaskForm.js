@@ -57,7 +57,7 @@ const TaskForm = () => {
 
                     </Typography >
 
-                    <Button onClick={handleForm} endIcon={<SendIcon />}>
+                    <Button type="submit" endIcon={<SendIcon />}>
                         Ajouter
                     </Button>
                 </form>
