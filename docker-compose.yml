@@ -1,0 +1,18 @@
+version: "1"
+services:
+  react-app:
+    build: ./01
+    image: react-app
+    restart: always
+    ports:
+      - "3000:3000"
+    command: npm start
+    stdin_open: true
+  json-server:
+    build: ./MokedAPI
+    image: json-server
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./MokedAPI/src/db.json:/MokedAPI/src/db
+    command: npm run dev
